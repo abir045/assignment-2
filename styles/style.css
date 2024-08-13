@@ -225,8 +225,10 @@ nav button {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  margin-top: 14px;
+
   font-weight: 400;
+  max-width: 600px;
+  margin: 14px auto;
 }
 
 .habits-image-container {
@@ -234,7 +236,7 @@ nav button {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 58px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   text-align: center;
 }
 
@@ -254,6 +256,67 @@ nav button {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 6px;
+}
+
+/* run an extra mile */
+
+.extra-mile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1060px;
+  margin: 100px auto;
+  border-radius: 18px;
+
+  background: rgb(34, 34, 34);
+}
+
+.extra-mile-right {
+}
+
+.extra-mile-right img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.extra-mile-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  max-width: 400px;
+}
+
+.extra-mile-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 14px;
+  margin-bottom: 34px;
+  max-width: 440px;
+}
+
+.extra-mile-right {
+  padding: 30px;
+}
+
+.extra-mile-left {
+  padding: 40px 50px;
+}
+
+.club-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 42px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 280px;
+}
+
+.extra-mile-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -301,5 +364,32 @@ nav button {
   .image-description {
     max-width: 230px;
     margin: 0 auto;
+  }
+  .habits-title {
+    padding-top: 0;
+  }
+  .habits-description {
+    line-height: 24px;
+  }
+
+  .extra-mile {
+    flex-direction: column;
+    margin: 66px 20px;
+  }
+
+  .club-btn {
+    width: 100%;
+  }
+
+  .extra-mile-title {
+    font-size: 2rem;
+  }
+
+  .extra-mile-image {
+    display: none;
+  }
+
+  .extra-mile-mobile {
+    display: block;
   }
 }
