@@ -10,7 +10,6 @@
 }
 
 .header-container {
-  /* background: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); */
   background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 0%);
 
   /* background: linear-gradient(
@@ -80,7 +79,7 @@ nav button {
   justify-content: space-between;
   align-items: center;
   max-width: 1060px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .header-right img {
@@ -181,7 +180,7 @@ nav button {
 
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  max-width: 193px;
+  max-width: 200px;
   position: absolute;
   top: 20%;
   right: -25%;
@@ -197,6 +196,64 @@ nav button {
 .workout {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.65);
+}
+
+.play {
+  display: none;
+}
+
+/* habits */
+
+.habits-container {
+  background: rgb(0, 0, 0);
+}
+
+.habits {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.habits-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding-top: 100px;
+}
+
+.habits-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 14px;
+  font-weight: 400;
+}
+
+.habits-image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 58px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.habits-image {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+}
+
+.image-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 30px;
+}
+
+.image-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 6px;
 }
 
 @media screen and (max-width: 576px) {
@@ -218,7 +275,7 @@ nav button {
   }
 
   .workout-videos {
-    top: 10%;
+    top: 5%;
     right: -5%;
   }
 
@@ -228,5 +285,21 @@ nav button {
 
   .header-left {
     margin: 0 20px;
+  }
+
+  .play {
+    display: block;
+  }
+  .dot {
+    display: none;
+  }
+
+  .habits-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-description {
+    max-width: 230px;
+    margin: 0 auto;
   }
 }
