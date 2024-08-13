@@ -522,6 +522,34 @@ form select {
   left: 5%;
 }
 
+.fitness-image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.fitness-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1060px;
+  margin: 50px auto;
+}
+
+.cardio {
+  position: relative;
+}
+.cardio-details {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255);
+}
+
 @media screen and (max-width: 576px) {
   .links {
     display: none;
@@ -605,6 +633,17 @@ form select {
     margin-top: 42px;
   }
 
+  .bmi {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .bmi-description {
+    margin-top: 14px;
+    max-width: 350px;
+    line-height: 24px;
+  }
+
   .bmi-form {
     max-width: 80%;
   }
@@ -635,5 +674,9 @@ form select {
     text-align: center;
     max-width: 300px;
     margin: 20px auto;
+  }
+
+  .fitness-image-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
