@@ -116,6 +116,7 @@ nav button {
 
 .join-club {
   background-color: rgba(230, 83, 60, 1);
+  border: none;
 }
 
 .download {
@@ -319,6 +320,144 @@ nav button {
   display: none;
 }
 
+/* BMI calculator */
+
+.bmi {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.bmi-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bmi-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-calculator-container {
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.bmi-calculator {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.bmi-calculator-header {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  /* margin: 52px 0; */
+}
+
+table {
+  margin-top: 52px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table td {
+  padding: 15px;
+}
+
+td {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+table tr {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.calculate {
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+
+.bmi-right {
+  max-width: 570px;
+}
+
+form input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 40px;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+input,
+select {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+form select {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+}
+
+.ageAndSex {
+  display: flex;
+
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.weight {
+  flex-grow: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.heightandWeight {
+  display: flex;
+  gap: 12px;
+}
+
+.activity-factor {
+  /* display: grid;
+  grid-template-columns: repeat(1, 1fr); */
+}
+
+.activity {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.group-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.cal-btn {
+  margin-top: 34px;
+  border: none;
+  max-width: 250px;
+}
+
 @media screen and (max-width: 576px) {
   .links {
     display: none;
@@ -391,5 +530,30 @@ nav button {
 
   .extra-mile-mobile {
     display: block;
+  }
+
+  .bmi-calculator {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .bmi-right {
+    margin-top: 42px;
+  }
+
+  .bmi-form {
+    max-width: 80%;
+  }
+
+  form input {
+    max-width: 170px;
+  }
+
+  form select {
+    max-width: 170px;
+  }
+
+  .activity {
+    max-width: 375px;
   }
 }
