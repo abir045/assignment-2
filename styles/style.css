@@ -436,11 +436,6 @@ form select {
   gap: 12px;
 }
 
-.activity-factor {
-  /* display: grid;
-  grid-template-columns: repeat(1, 1fr); */
-}
-
 .activity {
   margin-top: 12px;
   width: 100%;
@@ -456,6 +451,75 @@ form select {
   margin-top: 34px;
   border: none;
   max-width: 250px;
+}
+
+/* meet our team */
+
+.team-container {
+  background: rgb(0, 0, 0);
+}
+
+.meet-our-team {
+  max-width: 1060p;
+  margin: 0 auto;
+  padding-bottom: 88px;
+}
+
+.team-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding-top: 88px;
+}
+
+.team-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+  max-width: 650px;
+  margin: 14px auto;
+}
+
+.team-image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.team-image-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  border-radius: 18px;
+  max-width: 1060px;
+  margin: 58px auto;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.trainer-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+}
+
+.occupation {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.trainer-1-image {
+  position: relative;
+}
+
+.trainer-1 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -555,5 +619,21 @@ form select {
 
   .activity {
     max-width: 375px;
+  }
+
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .team-heading {
+    font-size: 2rem;
+  }
+
+  .team-description {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
   }
 }
