@@ -296,6 +296,12 @@ nav button {
   border-radius: 18px;
 }
 
+.extra-mile-image {
+  object-fit: none;
+  object-position: 66% 33%;
+  max-height: 310px;
+}
+
 .extra-mile-title {
   font-size: 3rem;
   font-weight: 900;
