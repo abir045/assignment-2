@@ -662,15 +662,22 @@ hr {
     margin: 0 auto;
   }
   .habits-title {
+    font-size: 2rem;
     padding-top: 0;
   }
   .habits-description {
     line-height: 24px;
+    text-align: center;
+    max-width: 310px;
   }
 
   .extra-mile {
     flex-direction: column;
     margin: 66px 20px;
+  }
+
+  .extra-mile-description {
+    line-height: 24px;
   }
 
   .club-btn {
@@ -687,11 +694,20 @@ hr {
 
   .extra-mile-mobile {
     display: block;
+    max-width: 300px;
+  }
+
+  .bmi-title {
+    font-size: 2rem;
   }
 
   .bmi-calculator {
     flex-direction: column;
     margin-left: 20px;
+  }
+
+  .bmi-calculator-header {
+    font-size: 1rem;
   }
 
   .bmi-right {
@@ -739,6 +755,7 @@ hr {
     text-align: center;
     max-width: 300px;
     margin: 20px auto;
+    line-height: 24px;
   }
 
   .fitness-image-container {
